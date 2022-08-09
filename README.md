@@ -48,11 +48,10 @@ A `Hotel Reservation System` named as `VBook`, coded in `Java and JavaFX`. Using
     --add-modules=javafx.controls,javafx.fxml
     ```
 
-5) Right click on your project -> open module settings -> global libararies -> remove lib if already added -> add lib folder located in (C:\Program Files\Java\javafx-sdk-15.0.1)
-    
-6) Run the project and it will be in running state.
+6) Right click on your project -> open module settings -> global libararies -> remove lib if already added -> add lib folder located in `C:\Program Files\Java\javafx-sdk-15.0.1`
+7) Run the project and it will be in running state.
 
-### Working Screenshot
+### Working Screenshots
 <div align="center">
   <img src = "https://github.com/SameetAsadullah/Hotel-Reservation-System/blob/main/extras/homepage-ss.png" alt = "" width="700px"/>
 </div>
@@ -80,3 +79,9 @@ A `Hotel Reservation System` named as `VBook`, coded in `Java and JavaFX`. Using
 <div align="center">
   <img src = "https://github.com/SameetAsadullah/Hotel-Reservation-System/blob/main/extras/manage-ss.png" alt = "" width="700px"/>
 </div>
+
+### Contributors
+- [Sameet Asadullah](https://github.com/SameetAsadullah) 
+- [Tayyab Ali](https://github.com/DarkDragz)
+- [Aysha Noor](https://github.com/ayshanoorr)
+- [Syed Hamza Tahir](https://github.com/S-Y-3-D)
