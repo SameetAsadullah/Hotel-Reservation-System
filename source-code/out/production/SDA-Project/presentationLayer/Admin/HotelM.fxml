@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #117A65;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.Admin.HotelM">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="261.0" style="-fx-background-color: #45B39D;" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="108.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VBook">
+                    <font>
+                        <Font name="Gabriola" size="24.0" />
+                    </font>
+                </Text>
+            <Text layoutX="18.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR ONE STOP DESTINATION FOR IT ALL">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <AnchorPane prefHeight="400.0" prefWidth="261.0" style="-fx-background-color: #2E2843;">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="270.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/314-3146061_v4byarthur1992as-iphone-mountain-wallpaper-sunset-orange-sunset-iphone.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#d7d6d6" layoutX="90.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VBook">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#d7d6d6" layoutX="35.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR ONE STOP DESTINATION FOR IT ALL">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="338.0" style="-fx-background-color: #2E2843;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="#d7d6d6" layoutX="141.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotels" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="txt_name" alignment="CENTER" focusTraversable="false" layoutX="95.0" layoutY="187.0" prefHeight="26.0" prefWidth="149.0" promptText="Name">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </TextField>
+                <Button fx:id="HotelSearch" layoutX="121.0" layoutY="289.0" mnemonicParsing="false" onAction="#SearchHotelButton" prefHeight="34.0" prefWidth="97.0" style="-fx-background-color: #A7605F;" text="Search" textAlignment="CENTER" textFill="#d7d6d6" />
+                <Text fill="#d7d6d6" layoutX="110.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE" textAlignment="CENTER">
+                    <font>
+                        <Font size="29.0" />
+                    </font>
+                </Text>
+            <TextField fx:id="txt_location" alignment="CENTER" focusTraversable="false" layoutX="95.0" layoutY="249.0" promptText="Location">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+                <Text fill="#d7d6d6" layoutX="135.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Name:" />
+            <Text fill="#d7d6d6" layoutX="145.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" />
+            <Label fx:id="label_invalid" alignment="CENTER" layoutX="137.0" layoutY="219.0" prefHeight="18.0" prefWidth="139.0" text="Hotels not found." textFill="#f20202" visible="false" />
+            <Line endX="70.7099609375" endY="0.2783203125" layoutX="158.0" layoutY="65.0" startX="-49.0" startY="0.2783203125" stroke="#d7d6d6" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

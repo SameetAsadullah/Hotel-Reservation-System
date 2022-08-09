@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #2E2843;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.Receptionist.RegisterHotelR">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="262.0" style="-fx-background-color: #040313;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="262.0">
+               <children>
+                  <Text fill="#aaaaaa" layoutX="40.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER NOW">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Line endX="96.19998168945312" layoutX="131.0" layoutY="186.0" startX="-96.60001373291016" stroke="#aaaaaa" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="409.0" style="-fx-background-color: #2E2843;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="20.0" layoutY="35.0" text="Provide Basic Information" textFill="#d7d6d6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_name" layoutX="20.0" layoutY="97.0" onKeyTyped="#nameUnfocus" prefHeight="27.0" prefWidth="214.0" promptText="Name" style="-fx-background-color: transparent; -fx-prompt-text-fill: #626362; -fx-border-color: #14111D; -fx-border-width: 0pc 0px 2px 0px; -fx-text-fill: #d7d6d6;" />
+            <TextField fx:id="txt_address" layoutX="21.0" layoutY="160.0" onKeyTyped="#addressUnfocus" prefHeight="27.0" prefWidth="212.0" promptText="Address" style="-fx-background-color: transparent; -fx-prompt-text-fill: #626362; -fx-border-color: #14111D; -fx-border-width: 0pc 0px 2px 0px; -fx-text-fill: #d7d6d6;" />
+            <TextField fx:id="txt_location" layoutX="21.0" layoutY="221.0" onKeyTyped="#locationUnfocus" prefHeight="27.0" prefWidth="213.0" promptText="Location" style="-fx-background-color: transparent; -fx-prompt-text-fill: #626362; -fx-border-color: #14111D; -fx-border-width: 0pc 0px 2px 0px; -fx-text-fill: #d7d6d6;" />
+            <TextField fx:id="txt_single_bed" layoutX="21.0" layoutY="375.0" onKeyTyped="#singleBedUnfocus" prefHeight="27.0" prefWidth="212.0" promptText="Total Single-Bed Rooms" style="-fx-background-color: transparent; -fx-prompt-text-fill: #626362; -fx-border-color: #14111D; -fx-border-width: 0pc 0px 2px 0px; -fx-text-fill: #d7d6d6;" />
+            <TextField fx:id="txt_double_bed" layoutX="21.0" layoutY="435.0" onKeyTyped="#doubleBedUnfocus" prefHeight="27.0" prefWidth="212.0" promptText="Total Double-Bed Rooms" style="-fx-background-color: transparent; -fx-prompt-text-fill: #626362; -fx-border-color: #14111D; -fx-border-width: 0pc 0px 2px 0px; -fx-text-fill: #d7d6d6;" />
+            <TextField fx:id="rs_double_bed" alignment="CENTER" layoutX="271.0" layoutY="435.0" onKeyTyped="#doublePriceUnfocus" prefHeight="27.0" prefWidth="90.0" promptText="Price" style="-fx-background-color: transparent; -fx-prompt-text-fill: #626362; -fx-border-color: #14111D; -fx-border-width: 0pc 0px 2px 0px; -fx-text-fill: #d7d6d6;" />
+            <Label layoutX="247.0" layoutY="366.0" text=":" textFill="#d7d6d6">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="431.0" prefHeight="20.0" prefWidth="5.0" text=":" textFill="#d7d6d6">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_register" layoutX="108.0" layoutY="521.0" mnemonicParsing="false" onAction="#registerHotel" prefHeight="38.0" prefWidth="222.0" style="-fx-background-color: #A7605F;" text="Register" textFill="#d7d6d6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_close" layoutX="391.0" mnemonicParsing="false" onAction="#closeClick" prefHeight="35.0" prefWidth="30.0" style="-fx-background-color: transparent;" text="X" textFill="#d7d6d6">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+            <Label layoutX="20.0" layoutY="300.0" text="Provide More Information" textFill="#d7d6d6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rs_single_bed" alignment="CENTER" layoutX="271.0" layoutY="375.0" onKeyTyped="#singlePriceUnfocus" prefHeight="27.0" prefWidth="90.0" promptText="Price" style="-fx-background-color: transparent; -fx-prompt-text-fill: #626362; -fx-border-color: #14111D; -fx-border-width: 0pc 0px 2px 0px; -fx-text-fill: #d7d6d6;" />
+            <Label fx:id="invalidHotel" layoutX="88.0" layoutY="568.0" text="Hotel with same name and location already exists" textFill="#f21010" visible="false" />
+            <Label fx:id="registeredSuccessfully" layoutX="157.0" layoutY="568.0" text="Registered Successfully" textFill="#11f053" visible="false" />
+            <Label fx:id="invalidName" layoutX="23.0" layoutY="132.0" text="Only numbers and alphaets are allowed" textFill="#fc1616" visible="false" />
+            <Label fx:id="invalidAddress" layoutX="61.0" layoutY="193.0" text="Commas are not allowed" textFill="#fc1616" visible="false" />
+            <Label fx:id="invalidLocation" layoutX="61.0" layoutY="255.0" text="Commas are not allowed" textFill="#fc1616" visible="false" />
+            <Label fx:id="invalidSection" layoutX="62.0" layoutY="348.0" text="Only integer value is allowed in the below section" textFill="#fc1616" visible="false" />
+            <Label fx:id="Nullhotel" alignment="CENTER" layoutX="107.0" layoutY="565.0" prefHeight="22.0" prefWidth="222.0" text="Kindly fill all the above empty fields" textFill="#ff0404" visible="false" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

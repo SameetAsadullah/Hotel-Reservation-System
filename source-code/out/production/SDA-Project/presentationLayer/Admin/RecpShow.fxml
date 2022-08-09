@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.Admin.RecpShow">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #85C1E9;" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="206.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECEPTIONIST">
+                    <font>
+                        <Font name="Gabriola" size="28.0" />
+                    </font>
+                </Text>
+                <AnchorPane layoutX="137.0" layoutY="60.0" prefHeight="278.0" prefWidth="226.0" style="-fx-background-color: #566573;">
+                    <children>
+                        <TextField fx:id="RName" alignment="CENTER" layoutX="32.0" layoutY="51.0" promptText="NAME" style="-fx-background-color: TRANSPAERNT;" />
+                        <TextField fx:id="RCnic" alignment="CENTER" layoutX="30.0" layoutY="78.0" promptText="CNIC" style="-fx-background-color: TRANSPAERNT;" />
+                        <TextField fx:id="RAccountNo" alignment="CENTER" layoutX="35.0" layoutY="110.0" promptText="ACCOUNT NO" style="-fx-background-color: TRANSPAERNT;" />
+                        <TextField fx:id="RPassword" alignment="CENTER" layoutX="35.0" layoutY="143.0" promptText="PASSWORD" style="-fx-background-color: TRANSPAERNT;" />
+                        <TextField fx:id="REmail" alignment="CENTER" layoutX="30.0" layoutY="174.0" promptText="EMAIL" style="-fx-background-color: TRANSPAERNT;" />
+                        <TextField fx:id="RAddress" alignment="CENTER" layoutX="33.0" layoutY="203.0" promptText="ADDRESS" style="-fx-background-color: TRANSPAERNT;" />
+                        <TextField fx:id="RPhoneNo" alignment="CENTER" layoutX="33.0" layoutY="236.0" promptText="PHONE NO" style="-fx-background-color: TRANSPAERNT;" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="14.0" layoutY="61.0" prefHeight="278.0" prefWidth="102.0" style="-fx-background-color: #5499C7;">
+                    <children>
+                        <Text layoutX="31.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME :" />
+                        <Text layoutX="18.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NO :" />
+                        <Text layoutX="34.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNIC :" />
+                        <Text layoutX="23.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADDRESS :" />
+                        <Text layoutX="31.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL :" />
+                        <Text layoutX="9.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCOUNT NO   :" />
+                        <Text layoutX="19.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD :" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="375.0" layoutY="60.0" prefHeight="280.0" prefWidth="200.0" style="-fx-background-color: #212F3D;">
+                    <children>
+                        <Button fx:id="REditName" layoutX="51.0" layoutY="51.0" mnemonicParsing="false" onAction="#RecpEditName" prefHeight="8.0" prefWidth="104.0" style="-fx-background-color: #F1948A;" text="Edit Name" />
+                        <Button fx:id="REditCnic" layoutX="51.0" layoutY="81.0" mnemonicParsing="false" onAction="#RecpEditCNIC" prefHeight="8.0" prefWidth="104.0" style="-fx-background-color: #F1948A;" text="Edit CNIC" />
+                        <Button fx:id="REditAcc" layoutX="51.0" layoutY="111.0" mnemonicParsing="false" onAction="#RecpEditAcc" prefHeight="8.0" prefWidth="104.0" style="-fx-background-color: #F1948A;" text="Edit Acc.. No" />
+                        <Button fx:id="REditPass" layoutX="51.0" layoutY="141.0" mnemonicParsing="false" onAction="#RecpEditPass" prefHeight="8.0" prefWidth="104.0" style="-fx-background-color: #F1948A;" text="Edit Password" />
+                        <Button fx:id="REditEmail" layoutX="51.0" layoutY="171.0" mnemonicParsing="false" onAction="#RecpEditEmail" prefHeight="8.0" prefWidth="104.0" style="-fx-background-color: #F1948A;" text="Edit Email" />
+                        <Button fx:id="REditAddress" layoutX="51.0" layoutY="201.0" mnemonicParsing="false" onAction="#RecpEditAddress" prefHeight="8.0" prefWidth="104.0" style="-fx-background-color: #F1948A;" text="Edit Address" />
+                        <Button fx:id="RecpEditPhone" layoutX="51.0" layoutY="231.0" mnemonicParsing="false" onAction="#RecpEditPhone" prefHeight="8.0" prefWidth="104.0" style="-fx-background-color: #F1948A;" text="Edit Phone No" />
+                    </children>
+                </AnchorPane>
+                <Button fx:id="CDelete" layoutX="219.0" layoutY="347.0" mnemonicParsing="false" onAction="#DeleteRecp" prefHeight="8.0" prefWidth="104.0" style="-fx-background-color: #F194#A932268A;" text="Delete Record" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

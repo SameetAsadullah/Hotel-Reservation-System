@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.Vendor.SignUpV">
+    <top>
+        <AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #2E2843;" BorderPane.alignment="CENTER">
+            <children>
+            <Label fx:id="pass_invalid" layoutX="141.0" layoutY="526.0" onKeyTyped="#confirmpassUnfocussed" prefHeight="31.0" prefWidth="135.0" text="Passwords dont match" textFill="#f21010" visible="false" />
+                <ImageView blendMode="SCREEN" fitHeight="600.0" fitWidth="400.0" layoutX="1.0" opacity="0.25" pickOnBounds="true">
+                    <image>
+                        <Image url="@../icons/yVfzCo.jpg" />
+                    </image>
+                </ImageView>
+                <AnchorPane layoutX="36.0" layoutY="85.0" opacity="0.75" prefHeight="398.0" prefWidth="330.0" style="-fx-background-color: #272727;">
+                    <children>
+                        <TextField fx:id="txt_name" layoutX="69.0" layoutY="27.0" onKeyTyped="#nameUnfocus" prefHeight="27.0" prefWidth="193.0" promptText="Name" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #AAAAAA; -fx-background-color: #272727; -fx-text-fill: #B98180; -fx-prompt-text-fill: #AAAAAA;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="txt_email" layoutX="69.0" layoutY="84.0" onKeyTyped="#emailunfocus" prefHeight="27.0" prefWidth="193.0" promptText="Email" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #AAAAAA; -fx-background-color: #272727; -fx-prompt-text-fill: #AAAAAA; -fx-text-fill: #B98180;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="txt_cnic" layoutX="69.0" layoutY="150.0" onKeyReleased="#cnicUnfocused" prefHeight="27.0" prefWidth="193.0" promptText="CNIC" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #AAAAAA; -fx-background-color: #272727; -fx-prompt-text-fill: #AAAAAA; -fx-text-fill: #B98180;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="txt_address" layoutX="69.0" layoutY="211.0" onKeyReleased="#addressUnfocused" prefHeight="27.0" prefWidth="193.0" promptText="Address" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #AAAAAA; -fx-background-color: #272727; -fx-prompt-text-fill: #AAAAAA; -fx-text-fill: #B98180;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="txt_contact" layoutX="69.0" layoutY="280.0" onKeyReleased="#contactUnfocused" prefHeight="27.0" prefWidth="193.0" promptText="Contact No" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #AAAAAA; -fx-background-color: #272727; -fx-prompt-text-fill: #AAAAAA; -fx-text-fill: #B98180;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="txt_credit" layoutX="69.0" layoutY="343.0" onKeyReleased="#creditUnfocused" prefHeight="27.0" prefWidth="193.0" promptText="Credit Card No" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #AAAAAA; -fx-background-color: #272727; -fx-prompt-text-fill: #AAAAAA; -fx-text-fill: #B98180;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </TextField>
+                        <Label fx:id="name_invalid" layoutX="59.0" layoutY="64.0" prefHeight="1.0" prefWidth="226.0" text="Only numbers and alphabets are allowed" textFill="#f21010" visible="false" />
+                  <Label fx:id="email_invalid1" layoutX="111.0" layoutY="122.0" prefHeight="7.0" prefWidth="106.0" text="Email already exists" textFill="#f21010" visible="false" />
+                  <Label fx:id="cnic_invalid" layoutX="52.0" layoutY="188.0" prefHeight="0.0" prefWidth="228.0" text="Only numbers are allowed. Fixed length: 13" textFill="#f21010" visible="false" />
+                  <Label fx:id="address_invalid" layoutX="103.0" layoutY="249.0" prefHeight="0.0" prefWidth="138.0" text="Comma is not allowed" textFill="#f21010" visible="false" />
+                  <Label fx:id="credit_invalid" layoutX="36.0" layoutY="379.0" prefHeight="7.0" prefWidth="255.0" text="Only numbers are allowed. Fixed length:- 13-19" textFill="#f21010" visible="false" />
+                  <Label fx:id="contact_invalid" layoutX="50.0" layoutY="319.0" prefHeight="0.0" prefWidth="231.0" text="Only Number are allowed. Fixed length:-11" textFill="#f21010" visible="false" />
+                  <Label fx:id="email_invalid" layoutX="87.0" layoutY="119.0" prefHeight="22.0" prefWidth="153.0" text="No Special Chracters #,$,%,?" textFill="#f21010" visible="false" />
+                    </children>
+                </AnchorPane>
+                <Label layoutX="120.0" layoutY="14.0" text="Create Account" textFill="#d7d6d6">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="178.0" layoutY="57.0" text="Vendor" textFill="#d7d6d6">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btn_submit" layoutX="141.0" layoutY="552.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="34.0" prefWidth="120.0" style="-fx-background-color: #A7605F;" text="Submit" textFill="#d7d6d6">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_close" layoutX="352.0" mnemonicParsing="false" onAction="#closeClick" prefHeight="27.0" prefWidth="38.0" style="-fx-background-color: transparent;" text="X" textFill="#d7d6d6">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Button>
+            <PasswordField fx:id="txt_pass" layoutX="45.0" layoutY="503.0" onKeyTyped="#passUnfocused" promptText="Password" style="-fx-background-color: transparent; -fx-text-fill: #d7d6d6; -fx-border-color: #d7d6d6; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="txt_confirm_pass" layoutX="208.0" layoutY="503.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-text-fill: #d7d6d6; -fx-border-color: #d7d6d6; -fx-border-width: 0px 0px 2px 0px;" />
+            <Label fx:id="pass_invalid1" layoutX="107.0" layoutY="533.0" prefHeight="18.0" prefWidth="188.0" text="Comma is not allowed in password" textFill="#f21010" visible="false" />
+            <Label fx:id="fillAll" layoutX="107.0" layoutY="533.0" text="Kindly fill all the above empty fields" textFill="#f21010" visible="false" />
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

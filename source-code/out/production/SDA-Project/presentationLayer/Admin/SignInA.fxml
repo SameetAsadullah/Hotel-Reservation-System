@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.Admin.SignInA">
+    <center>
+        <AnchorPane blendMode="DARKEN" prefHeight="500.0" prefWidth="740.0" style="-fx-background-color: #2E2843; -fx-background-color: ;" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane layoutX="462.0" layoutY="75.0" prefHeight="450.0" prefWidth="377.0" style="-fx-background-color: #040313;">
+                    <children>
+                        <Label layoutX="152.0" layoutY="98.0" text="Sign In" textFill="#d7d6d6">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="btn_Login" layoutX="142.0" layoutY="285.0" mnemonicParsing="false" onAction="#LogInClick" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #B0645A;" text="Log In" textFill="#d6d5d5" />
+                        <Label layoutX="142.0" layoutY="320.0" style="-fx-text-fill: #757575;" text="Forgot Password?" textFill="#6f6969" />
+                        <TextField fx:id="txt_user" layoutX="114.0" layoutY="172.0" promptText="Username / Email" style="-fx-background-color: #040313; -fx-text-fill: #d7d6d6; -fx-prompt-text-fill: #343434; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #393652;" />
+                        <PasswordField fx:id="txt_password" layoutX="114.0" layoutY="225.0" promptText="Password" style="-fx-background-color: #040313; -fx-prompt-text-fill: #343434; -fx-text-fill: #d7d6d6; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #393652;" />
+                  <Label fx:id="label_invalid" layoutX="100.0" layoutY="261.0" prefHeight="18.0" prefWidth="175.0" text="Incorrect Username or Password" textFill="#dd0707" visible="false" />
+                    </children>
+                </AnchorPane>
+                <ImageView blendMode="SCREEN" fitHeight="600.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/travel-brochure-1-right.jpg" />
+                    </image>
+                </ImageView>
+                <Button fx:id="btn_close" layoutX="852.0" mnemonicParsing="false" onAction="#closeClick" prefHeight="27.0" prefWidth="38.0" style="-fx-background-color: transparent;" text="X" textFill="#d7d6d6">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Button>
+            <ImageView fitHeight="600.0" fitWidth="479.0" opacity="0.24" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/7901e9229ae63c66dd7835241ccbdd6c.jpg" />
+               </image>
+            </ImageView>
+                <Label layoutX="162.0" layoutY="175.0" text="Vbook" textFill="#d7d6d6">
+                    <font>
+                        <Font name="Symbol" size="28.0" />
+                    </font>
+                </Label>
+                <Label layoutX="67.0" layoutY="220.0" text="YOUR ONE STOP DESTINATION FOR IT ALL" textFill="#d7d6d6">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

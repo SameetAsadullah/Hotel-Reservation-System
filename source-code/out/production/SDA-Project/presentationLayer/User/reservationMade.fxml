@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="600.0" style="-fx-background-color: #2E2843;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.User.reservationMade">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-4.0" layoutY="147.0" opacity="0.3" prefHeight="114.0" prefWidth="606.0" style="-fx-background-color: #000000;" />
+            <ImageView blendMode="SCREEN" fitHeight="431.0" fitWidth="608.0" layoutX="-6.0" layoutY="-6.0" opacity="0.5" pickOnBounds="true">
+               <image>
+                  <Image url="@../icons/d8pv6xo-3fe7ebb4-2b4a-4813-aa30-e373a86575d2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="88.0" layoutY="78.0" text="Successfully Made a Reservation!" textFill="#d3d3d3">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="173.0" prefHeight="21.0" prefWidth="40.0" text="Price: " textFill="LIGHTGRAY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_price" layoutX="321.0" layoutY="173.0" text="0 Rs" textFill="LIGHTGRAY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="213.0" text="Room No Alotted:" textFill="LIGHTGRAY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_rooms" layoutX="321.0" layoutY="213.0" text="-" textFill="LIGHTGRAY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_close" layoutX="554.0" mnemonicParsing="false" onAction="#closeClick" style="-fx-background-color: transparent;" text="X" textFill="LIGHTGRAY">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

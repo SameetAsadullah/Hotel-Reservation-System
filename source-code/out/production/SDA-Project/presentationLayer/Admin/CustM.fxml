@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #117A65;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.Admin.CustM">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="261.0" style="-fx-background-color: #2E2843;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="270.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/314-3146061_v4byarthur1992as-iphone-mountain-wallpaper-sunset-orange-sunset-iphone.png" />
+               </image>
+            </ImageView>
+            <Text fill="#d7d6d6" layoutX="90.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VBook">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <Text fill="#d7d6d6" layoutX="35.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR ONE STOP DESTINATION FOR IT ALL">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="338.0" style="-fx-background-color: #2E2843;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#d7d6d6" layoutX="126.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER" textAlignment="CENTER">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_email" alignment="CENTER" focusTraversable="false" layoutX="83.0" layoutY="183.0" prefHeight="36.0" prefWidth="174.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #d7d6d6;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="btn_Search" layoutX="129.0" layoutY="250.0" mnemonicParsing="false" onAction="#SearchClick" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #A7605F;" text="Search" textAlignment="CENTER" textFill="#d7d6d6" />
+            <Text fill="#d7d6d6" layoutX="110.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE" textAlignment="CENTER">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <Label fx:id="label_invalid" alignment="CENTER" layoutX="102.0" layoutY="192.0" prefHeight="18.0" prefWidth="122.0" text="Email Not Found" textFill="#fd0606" visible="false" />
+            <Line endX="70.7099609375" endY="0.2783203125" layoutX="159.0" layoutY="61.0" startX="-49.0" startY="0.2783203125" stroke="#d7d6d6" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
