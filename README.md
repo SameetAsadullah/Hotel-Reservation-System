@@ -29,7 +29,7 @@ A `Hotel Reservation System` named as `VBook`, coded in `Java and JavaFX`. Using
 - Can edit/view/delete advertised hotels data
 
 ### Manual
-1) [Download](https://download.oracle.com/otn/java/jdk/15.0.2%2B7/0d1cfde4252546c6931946de8db48ee2/jdk-15.0.2_windows-x64_bin.exe) and install jdk-15 from the given link (C:\Program Files\Java\jdk-15 should be there after installation)
+1) [Download](https://download.oracle.com/otn/java/jdk/15.0.2%2B7/0d1cfde4252546c6931946de8db48ee2/jdk-15.0.2_windows-x64_bin.exe) and install jdk-15 from the given link (`C:\Program Files\Java\jdk-15` folder should be there after installation)
     ```
     https://download.oracle.com/otn/java/jdk/15.0.2%2B7/0d1cfde4252546c6931946de8db48ee2/jdk-15.0.2_windows-x64_bin.exe
     ```
