@@ -1,4 +1,4 @@
-<h1 align="center">Hotel Reservation Syste</h1>
+<h1 align="center">Hotel Reservation System</h1>
 
 ### Description
 A `Hotel Reservation System` named as `VBook`, coded in `Java and JavaFX`. Using csv files for storing the data. Administrator, Receptionist, Vendor, and Customer are the `Four Users` of this project and are described below:
